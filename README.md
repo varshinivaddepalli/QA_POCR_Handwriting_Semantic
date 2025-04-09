@@ -40,10 +40,11 @@ Perfect for cleaning scanned documents, forms, receipts, or documents with faint
 
 ### 2️⃣ `docqa_paddle_tesseract_pdfplumber.py`
 
-| 🖼 UI Preview (`Output2.gif`) |
+| 🖼 UI Preview |
 
-![Input](/Input1.png)
-![Output2](/Output2.gif)
+| 🔍 Input Image (`Input1.png`) | 🎨 Output (`Output1.png`) |
+|------------------------------|-----------------------------------|
+| ![Input](/Input1.png)  | ![Output2](/Output2.gif)   |
 
 📌 **Purpose:**  
 Interactive tool that **extracts, analyzes, and answers** questions from uploaded **images or PDFs** using AI-powered OCR and LLMs.
@@ -83,17 +84,34 @@ Ideal for students, professionals, or businesses who want to **interact with uns
 
 ## 🚀 How to Run
 
+### 📦 Installation
+
+Clone the repo:
+
+```bash
+git clone https://github.com/varshinivaddepalli/QA_POCR_Handwriting_Semantic.git
+cd QA_POCR_Handwriting_Semantic
+
 ### 📌 Prerequisites
 
 Install required libraries:
 ```bash
-pip install paddleocr paddlepaddle streamlit opencv-python pytesseract pdfplumber pandas Pillow requests
+pip install -r requirements.txt
 ```
 
 Ensure you have:
 - Trained model files in the correct directory (`/POCR/`)
+/POCR/
+  ├── ch_ppocr_mobile_v2.0_det_train/
+  └── en_number_mobile_v2.0_rec_slim_train/
+  
 - Tesseract OCR installed and in PATH (for Windows, add path to `tesseract.exe`)
+  
 - A valid Friendli API key
+```python
+API_KEY = "your_friendli_api_key_here"
+```
+Get your key from: [Friendli.ai](https://www.friendli.ai/)
 
 ---
 
@@ -123,17 +141,6 @@ This will:
 - Extract and display the text
 - Let you ask questions about the document
 - Display AI-generated answers
-
----
-
-## 🔐 Friendli API Setup
-
-Replace the placeholder in the script:
-```python
-API_KEY = "your_friendli_api_key_here"
-```
-
-Get your key from: [Friendli.ai](https://www.friendli.ai/)
 
 ---
 
@@ -173,5 +180,3 @@ Get your key from: [Friendli.ai](https://www.friendli.ai/)
 📍 Hyderabad, India
 
 ---
-
-Let me know if you'd like this turned into a downloadable `README.md` file or need visual samples included too!
