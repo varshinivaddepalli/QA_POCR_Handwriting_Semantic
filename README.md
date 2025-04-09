@@ -18,7 +18,7 @@ This project contains **two Python scripts**, each addressing a unique but compl
 
 | 🔍 Input Image (`Input1.png`) | 🎨 Redrawn Output (`Output1.png`) |
 |------------------------------|-----------------------------------|
-| ![Input1](input/Input1.png)  | ![Output1](output/Output1.png)    |
+| ![Input](/Input1.png)  | ![Output](/Output1.png)    |
 
 📌 **Purpose:**  
 Redraws or replaces existing text in an image with cleanly rendered text at the same positions using OCR.
@@ -41,8 +41,9 @@ Perfect for cleaning scanned documents, forms, receipts, or documents with faint
 ### 2️⃣ `docqa_paddle_tesseract_pdfplumber.py`
 
 | 🖼 UI Preview (`Output2.gif`) |
-|------------------------------|
-| ![Output2](output/Output2.gif) |
+
+![Input](/Input1.png)
+![Output2](/Output2.gif)
 
 📌 **Purpose:**  
 Interactive tool that **extracts, analyzes, and answers** questions from uploaded **images or PDFs** using AI-powered OCR and LLMs.
