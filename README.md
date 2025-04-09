@@ -86,32 +86,55 @@ Ideal for students, professionals, or businesses who want to **interact with uns
 
 ### 📦 Installation
 
-Clone the repo:
+First, clone the repository:
 
 ```bash
 git clone https://github.com/varshinivaddepalli/QA_POCR_Handwriting_Semantic.git
 cd QA_POCR_Handwriting_Semantic
+```
 
-### 📌 Prerequisites
+Then, install all required libraries using:
 
-Install required libraries:
 ```bash
 pip install -r requirements.txt
 ```
 
-Ensure you have:
-- Trained model files in the correct directory (`/POCR/`)
+---
+
+### 📌 Prerequisites
+
+Before running the scripts, make sure you have the following set up:
+
+#### ✅ 1. OCR Model Files
+
+Download and place the trained PaddleOCR model files in the following directory structure:
+
+```
 /POCR/
-  ├── ch_ppocr_mobile_v2.0_det_train/
-  └── en_number_mobile_v2.0_rec_slim_train/
-  
-- Tesseract OCR installed and in PATH (for Windows, add path to `tesseract.exe`)
-  
-- A valid Friendli API key
+├── ch_ppocr_mobile_v2.0_det_train/
+└── en_number_mobile_v2.0_rec_slim_train/
+```
+
+These are used for text detection and recognition by PaddleOCR.
+
+#### ✅ 2. Tesseract OCR
+
+Make sure **Tesseract OCR** is installed and added to your system’s PATH.
+
+- [Installation Guide](https://github.com/tesseract-ocr/tesseract)
+- For **Windows**, ensure the path to `tesseract.exe` is added to the environment variables.
+
+#### ✅ 3. Friendli API Key
+
+To use Meta LLaMA 3.1 for Q&A functionality, you need a valid **Friendli API key**.
+
+1. Replace the following line in `docqa_paddle_tesseract_pdfplumber.py`:
+
 ```python
 API_KEY = "your_friendli_api_key_here"
 ```
-Get your key from: [Friendli.ai](https://www.friendli.ai/)
+
+2. You can get your API key from [Friendli.ai](https://www.friendli.ai/)
 
 ---
 
