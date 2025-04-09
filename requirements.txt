@@ -1,0 +1,9 @@
+paddleocr 
+paddlepaddle
+streamlit 
+opencv-python 
+pytesseract 
+pdfplumber 
+pandas 
+Pillow 
+requests
