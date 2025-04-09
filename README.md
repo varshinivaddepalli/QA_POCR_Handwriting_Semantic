@@ -1,4 +1,4 @@
-# 🧠 Smart PaddleOCR & Hadnwritten Documents Q&A System
+# 🧠 Smart Handwritten Document's Q&A System
 
 Welcome to the **Smart OCR & PDF Q&A Suite** – a dual-script project leveraging **PaddleOCR, Tesseract, PDFPlumber**, and **LLaMA 3.1** to extract, redraw, and intelligently answer queries based on text from **images and PDFs**.
 
