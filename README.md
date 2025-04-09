@@ -67,21 +67,6 @@ Ideal for students, professionals, or businesses who want to **interact with uns
 - “Summarize the contents of this image.”
 
 ---
-
-## 🧱 Tech Stack
-
-| Component          | Tech Used                          |
-|-------------------|------------------------------------|
-| OCR Engine         | PaddleOCR, Tesseract               |
-| PDF Parsing        | PDFPlumber                         |
-| LLM (Q&A)          | Meta LLaMA 3.1 (via Friendli API)  |
-| UI Framework       | Streamlit                          |
-| Image Processing   | OpenCV, PIL                        |
-| Data Analysis      | Pandas                             |
-| Font Handling      | DejaVu Sans                        |
-
----
-
 ## 🚀 How to Run
 
 ### 📦 Installation
@@ -184,6 +169,19 @@ This will:
 - Use FAISS + embeddings for document memory.
 - Add multilingual OCR support.
 - Enable PDF saving after text redrawing.
+
+---
+## 🧱 Tech Stack
+
+| Component          | Tech Used                          |
+|-------------------|------------------------------------|
+| OCR Engine         | PaddleOCR, Tesseract               |
+| PDF Parsing        | PDFPlumber                         |
+| LLM (Q&A)          | Meta LLaMA 3.1 (via Friendli API)  |
+| UI Framework       | Streamlit                          |
+| Image Processing   | OpenCV, PIL                        |
+| Data Analysis      | Pandas                             |
+| Font Handling      | DejaVu Sans                        |
 
 ---
 
